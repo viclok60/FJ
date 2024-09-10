@@ -4,7 +4,7 @@
 
 **You can find the Tutorial posted [here.](https://github.com/samvidita/Connect-RaspberryPi-to-laptop-wirelessly?tab=readme-ov-file#connect-raspberry-pi-to-laptop-wirelessly)**
 
-# Install MariaDB and PHPMyAdmin on Rasberry Pi 
+# Install MariaDB and PHPMyAdmin on Raspberry Pi 
 
 **You can find the Tutorial posted [here](https://raspberrytips.com/install-mariadb-raspberry-pi) or [here.](https://pimylifeup.com/raspberry-pi-mysql)**
 
