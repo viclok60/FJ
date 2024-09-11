@@ -30,18 +30,18 @@ Step 2: Set the fix IP Address for the Raspberry Pi
 
 The easiest way to launch an application on boot is to modify the autostart file, which is used to configure applications that run when the desktop environment starts.
 
-1. Open a terminal on your Raspberry Pi.
-2. Open the autostart file for editing:
+Step 1: Open a terminal on your Raspberry Pi.
+Step 2: Open the autostart file for editing:
 
     sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
 
-3. Add the following line to the end of the file to start Chromium:
+Step 3: Add the following line to the end of the file to start Chromium:
 
     @chromium-browser --start-fullscreen https://www.example.com
 
 You can replace https://www.example.com with the website or local file you want to open. Remove --start-fullscreen if you don’t want it in full screen.
 
-4. Press Ctrl + X, then Y and Enter to save and exit the file.
-5. After making the changes, reboot your Raspberry Pi to see the browser launch on startup:
+Step 4: Press Ctrl + X, then Y and Enter to save and exit the file.
+Step 5: After making the changes, reboot your Raspberry Pi to see the browser launch on startup:
 
     sudo reboot
