@@ -16,3 +16,6 @@ Step 2: Set the fix IP Address for the Raspberry Pi
 
 **You can find the Tutorial posted [here](https://raspberrytips.com/install-mariadb-raspberry-pi) or [here.](https://pimylifeup.com/raspberry-pi-mysql)**
 
+# Install HIDdevice module in Node Red 
+
+**You can find the Tutorial posted [here](https://flows.nodered.org/node/@gdziuba/node-red-usbhid) and [here](https://github.com/node-hid/node-hid#linux-notes)**
