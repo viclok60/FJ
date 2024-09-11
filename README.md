@@ -21,3 +21,7 @@ Step 2: Set the fix IP Address for the Raspberry Pi
 **You can find the Tutorial posted [here](https://flows.nodered.org/node/@gdziuba/node-red-usbhid) and [here.](https://github.com/node-hid/node-hid#linux-notes)**
 
 > _Note : HIDdevice is for connecting the RFID scanner to Node-Red
+
+# Set the Admin password in Node-Red 
+
+**You can find the Tutorial posted [here](https://discourse.nodered.org/t/password-in-node-red/50288/43?page=3) or [here.](https://discourse.nodered.org/t/node-red-security-password/10774/4)**
