@@ -40,7 +40,7 @@ Step 3: Add the following line to the end of the file to start Chromium:
 
     @chromium-browser --start-fullscreen https://www.example.com
 
-You can replace https://www.example.com with the website or local file you want to open. Remove --start-fullscreen if you don’t want it in full screen.
+You can replace `https://www.example.com` with the website or local file you want to open. Remove --start-fullscreen if you don’t want it in full screen.
 
 Step 4: Press Ctrl + X, then Y and Enter to save and exit the file.
 
