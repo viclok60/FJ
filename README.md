@@ -6,6 +6,7 @@
 
 Setup Raspberry Pi with a fixed IP Address for remote access. 
 
+
 ![WirelessSetting](doc/WirelessSetting.png)
 
 # Install MariaDB and PHPMyAdmin on Raspberry Pi 
