@@ -34,17 +34,29 @@ The easiest way to launch an application on boot is to modify the autostart file
 
 Step 1: Open a terminal on your Raspberry Pi.
 
-Step 2: Open the autostart file for editing:
+Step 2: Create an autostart directory if it doesn’t exist
 
-    sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
+    sudo mkdir -p ~/.config/autostart
 
-Step 3: Add the following line to the end of the file to start Chromium:
+Step 3: Create a new autostart file for Chromium
 
-    @chromium-browser --start-fullscreen https://www.example.com
+    sudo nano ~/.config/autostart/chromium-browser.desktop
+
+Step 4: Add the following content to the file
+
+    [Desktop Entry]
+    Type=Application
+    Name=Chromium Browser
+    Exec=chromium-browser --kiosk --start-fullscreen https://www.example.com
+    X-GNOME-Autostart-enabled=true
+
+The Exec line uses --kiosk mode to launch Chromium in full-screen without any toolbars or controls.
 
 You can replace `https://www.example.com` with the website or local file you want to open. Remove --start-fullscreen if you don’t want it in full screen.
 
-Step 4: Press Ctrl + X, then Y and Enter to save and exit the file.
+Replace https://www.example.com with the URL or local file path you want Chromium to load.
+
+The X-GNOME-Autostart-enabled=true ensures the application starts on boot.
 
 Step 5: After making the changes, reboot your Raspberry Pi to see the browser launch on startup:
 
