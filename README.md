@@ -28,6 +28,8 @@ Prerequisite: libudev-dev, libusb-1.0-0-dev
 
 **You can find the Tutorial posted [here](https://discourse.nodered.org/t/password-in-node-red/50288/43?page=3) or [here.](https://discourse.nodered.org/t/node-red-security-password/10774/4)**
 
+> _Note : node-red admin hash-pw
+
 # Set Chromium Browser to Launch on Boot 
 
 The easiest way to launch an application on boot is to modify the autostart file, which is used to configure applications that run when the desktop environment starts.
