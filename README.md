@@ -18,7 +18,7 @@ Step 2: Set the fix IP Address for the Raspberry Pi
 
 # Install HIDdevice module in Node-Red 
 
-Prerequisite: libudev-dev, libusb-1.0-0-dev
+Prerequisite: sudo apt install libusb-1.0-0 libusb-1.0-0-dev libudev-dev
 
 **You can find the Tutorial posted [here](https://flows.nodered.org/node/@gdziuba/node-red-usbhid) and [here.](https://github.com/node-hid/node-hid#linux-notes)**
 
