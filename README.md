@@ -22,6 +22,8 @@ sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
 
 bind-address = 0.0.0.0
 
+sudo systemctl restart mariadb
+
 # Install HIDdevice module in Node-Red 
 
 Prerequisite: sudo apt install libusb-1.0-0 libusb-1.0-0-dev libudev-dev
