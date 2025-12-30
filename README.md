@@ -16,6 +16,12 @@ Step 2: Set the fix IP Address for the Raspberry Pi
 
 **You can find the Tutorial posted [here](https://raspberrytips.com/install-mariadb-raspberry-pi) or [here.](https://pimylifeup.com/raspberry-pi-mysql)**
 
+**Allow mariadb to be connected from any IP-address.**
+
+sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
+
+bind-address = 0.0.0.0
+
 # Install HIDdevice module in Node-Red 
 
 Prerequisite: sudo apt install libusb-1.0-0 libusb-1.0-0-dev libudev-dev
