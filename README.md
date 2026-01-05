@@ -50,7 +50,30 @@ Prerequisite: sudo apt install libusb-1.0-0 libusb-1.0-0-dev libudev-dev
 
 **You can find the Tutorial posted [here](https://flows.nodered.org/node/@gdziuba/node-red-usbhid) and [here.](https://github.com/node-hid/node-hid#linux-notes)**
 
-> _Note : HIDdevice is for connecting the RFID scanner to Node-Red. 
+> _Note : HIDdevice is for connecting the RFID scanner to Node-Red.
+
+Step 1: 
+
+    sudo mkdir -p /etc/udev/rules.d
+
+Step 2:
+
+    sudo nano /etc/udev/rules.d/85-pure-data.rules
+
+Step 3: 
+
+    SUBSYSTEM=="input", GROUP="input", MODE="0666"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="27b8", ATTRS{idProduct}=="01ed", MODE:="666", GROUP="plugdev"
+    KERNEL=="hidraw*", ATTRS{idVendor}=="27b8", ATTRS{idProduct}=="01ed", MODE="0666", GROUP="plugdev"
+
+Step 4:
+
+    sudo groupadd -f input
+    sudo gpasswd -a $USER input
+
+Step 5:
+
+    sudo udevadm control --reload-rules
 
 # Set the Admin password in Node-Red 
 
