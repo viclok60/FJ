@@ -30,6 +30,20 @@ Step 3:
 
     sudo systemctl restart mariadb
 
+# Install Node-Red 
+
+Step 1: 
+
+    bash <(curl -sL https://github.com/node-red/linux-installers/releases/latest/download/update-nodejs-and-nodered-deb)
+
+Step 2: 
+
+    sudo systemctl enable nodered.service
+
+Step 3: 
+
+    node-red-start
+
 # Install HIDdevice module in Node-Red 
 
 Prerequisite: sudo apt install libusb-1.0-0 libusb-1.0-0-dev libudev-dev
